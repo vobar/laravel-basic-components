@@ -8,7 +8,7 @@ class NewsController
 {
     public function index()
     {
-        $news = News::select(['name'])->get();
+        $news = News::select(['title'])->get();
 
         return response()->json([
             'news' => $news,
