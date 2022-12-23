@@ -1,6 +1,6 @@
 <?php
 
-namespace Vobar\LaravelBasicSite\Providers;
+namespace Vobar\LaravelBasicComponents\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

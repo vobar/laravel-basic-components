@@ -20,12 +20,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Vobar\\LaravelBasicSite\\": "src/"
+      "Vobar\\LaravelBasicComponents\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Vobar\\LaravelBasicSite\\Test\\": "tests/"
+      "Vobar\\LaravelBasicComponents\\Test\\": "tests/"
     }
   },
   "scripts": {
