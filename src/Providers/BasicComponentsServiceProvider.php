@@ -18,6 +18,12 @@ class BasicComponentsServiceProvider extends ServiceProvider
                 __DIR__ . '/../../app/Models/News.php' => app_path('Models/News.php'),
             ], 'news');
 
+            $this->publishes([
+                __DIR__ . '/../../resources/js/Components/Elements/SelectFilterable.vue' => resource_path(
+                    '/js/Components/Elements/SelectFilterable.vue'
+                ),
+            ], 'vue-SelectFilterable');
+
             $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
         }
     }
