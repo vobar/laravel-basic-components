@@ -4,7 +4,7 @@ namespace Vobar\LaravelBasicComponents\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelBasicComponentsServiceProvider extends ServiceProvider
+class BasicComponentsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
