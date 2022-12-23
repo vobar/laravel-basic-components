@@ -1,6 +1,6 @@
 {
-  "name": "vobar/laravel-basic-site",
-  "description": "Laravel package for basic site",
+  "name": "vobar/laravel-basic-components",
+  "description": "Laravel package basic components for small sites",
   "license": "MIT",
   "type": "library",
   "authors": [
