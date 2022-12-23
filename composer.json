@@ -38,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "BasicComponentsServiceProvider"
+        "Vobar\\LaravelBasicComponents\\BasicComponentsServiceProvider"
       ]
     }
   }
