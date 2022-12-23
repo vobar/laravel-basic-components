@@ -25,26 +25,26 @@ php artisan vendor:publish --tag=[tag_name]
   <details>
       <summary>SelectFilterable - is a select with filterable list --tag=vue-SelectFilterable</summary>
 
-    **Attention!** Need headlessui npm package!
+  **Attention!** Need headlessui npm package!
 
-    Input parameters:
+  Input parameters:
     - selected - selected element id
     - people - list with format:```[{id: 1, name: 'Не выбран'}]```
-        
-    #### Пример вызова:
+
+  #### Пример вызова:
     ```vue
         <SelectFilterable
             v-model:selected="goods.user_id"
             :people="store.responsibles"
         />
     ```
-    
-  </details>
 
+  </details>
 
 ---
 
 #### License:
+
 MIT
 
 ---
