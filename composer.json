@@ -1,0 +1,45 @@
+{
+  "name": "vobar/laravel-basic-site",
+  "description": "Laravel package for basic site",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Vladimir vobar Barkaev"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/database": "^9.0",
+    "illuminate/support": "^9.0",
+    "illuminate/console": "^9.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.2",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vobar\\LaravelBasicSite\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vobar\\LaravelBasicSite\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelBasicComponentsServiceProvider"
+      ]
+    }
+  }
+}
