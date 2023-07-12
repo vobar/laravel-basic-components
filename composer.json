@@ -38,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Vobar\\LaravelBasicComponents\\Providers\\BasicComponentsServiceProvider"
+        "PancakesServiceProvider"
       ]
     }
   }
