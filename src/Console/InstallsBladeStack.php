@@ -14,6 +14,13 @@ trait InstallsBladeStack
      */
     protected function installBladeStack()
     {
+        // Migrations...
+        (new Filesystem)->ensureDirectoryExists(base_path('database/migrations'));
+        (new Filesystem)->copyDirectory(
+            __DIR__ . '/../../stubs/database/migrations',
+            base_path('database/migrations')
+        );
+
         // Controllers...
         (new Filesystem)->ensureDirectoryExists(app_path('Http/Controllers'));
         (new Filesystem)->copyDirectory(
