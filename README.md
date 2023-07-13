@@ -16,13 +16,13 @@ Do not write it! Only install =)
 
 ### HOW TO INSTALL
 ```php
-composer require vobar/laravel-basic-site
+composer require vobar/laravel-basic-components
 ```
 ---
 
 ### HOW TO PUBLISH
 ```php
-php artisan vendor:publish [stack]
+php artisan basic:install [stack]
 ```
 #### available stacks:
 
