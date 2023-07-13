@@ -15,19 +15,22 @@ Do not write it! Only install =)
 ---
 
 ### HOW TO INSTALL
-
+```php
 composer require vobar/laravel-basic-site:dev-master
-
+```
 ---
 
 ### HOW TO PUBLISH
+```php
+php artisan vendor:publish --stack=[stack_name]
+```
+#### available stacks:
 
-php artisan vendor:publish --tag=[tag_name]
+- vue
+- blade
 
-#### available tags:
 
-- news
-- slider (WIP)
+# OLD. WIP
 - vue components:
   <details>
       <summary>SelectFilterable - is a select with filterable list --tag=vue-SelectFilterable</summary>
