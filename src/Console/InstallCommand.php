@@ -252,7 +252,7 @@ class InstallCommand extends Command
      */
     protected function addInFile(string $string, string $path)
     {
-        file_put_contents($path, file_get_contents($path) . "\n" . $string);
+        file_put_contents($path, file_get_contents($path) . PHP_EOL . $string . PHP_EOL);
     }
 
     /**

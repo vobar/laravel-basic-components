@@ -58,8 +58,8 @@ trait InstallsBladeStack
 //        copy(__DIR__ . '/../../stubs/default/routes/auth.php', base_path('routes/auth.php'));
 
 
-        $this->replaceInFile('use Illuminate\Support\Facades\Route;',
-            "use Illuminate\Support\Facades\Route;\n" .
+        $this->replaceInFile("use Illuminate\Support\Facades\Route;",
+            "use Illuminate\Support\Facades\Route;" . PHP_EOL .
             "use app\Http\Controllers\NewsController;",
             base_path('routes/web.php')
         );
@@ -78,7 +78,7 @@ trait InstallsBladeStack
         );
 
         $this->replaceInFile('use Illuminate\Support\Facades\Route;',
-            "use Illuminate\Support\Facades\Route;\n" .
+            "use Illuminate\Support\Facades\Route;"  . PHP_EOL .
             "use app\Http\Controllers\ContactsController;",
             base_path('routes/web.php')
         );
