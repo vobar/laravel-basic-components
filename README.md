@@ -16,7 +16,7 @@ Do not write it! Only install =)
 
 ### HOW TO INSTALL
 ```php
-composer require vobar/laravel-basic-site:dev-master
+composer require vobar/laravel-basic-site
 ```
 ---
 
