@@ -10,8 +10,8 @@ class ContactsController extends Controller
     public function index()
     {
         $breadcrumbs = [
-            __('Главная') => '/',
-            __('Контакты') => ''
+            'Главная' => '/',
+            'Контакты' => ''
         ];
 
         $settings = Settings::whereIn('name', ['CONTACTS_ADDRESS', 'CONTACTS_EMAIL', 'CONTACTS_PHONE'])

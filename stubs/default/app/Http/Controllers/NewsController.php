@@ -13,8 +13,8 @@ class NewsController
     public function index(Request $request)
     {
         $breadcrumbs = [
-            __('Главная') => '/',
-            __('Новости и акции') => ''
+            'Главная' => '/',
+            'Новости и акции' => ''
         ];
 
         //flag to show only actions (not news)
@@ -53,8 +53,8 @@ class NewsController
             ->firstOrFail();
 
         $breadcrumbs = [
-            __('Главная') => '/',
-            __('Новости и акции') => route('news.index'),
+            'Главная' => '/',
+            'Новости и акции' => route('news.index'),
             $news_item->name => '' //TODO may be do it translatable
         ];
 

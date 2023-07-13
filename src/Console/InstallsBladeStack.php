@@ -58,17 +58,33 @@ trait InstallsBladeStack
 //        copy(__DIR__ . '/../../stubs/default/routes/auth.php', base_path('routes/auth.php'));
 
 
+        $this->replaceInFile('use Illuminate\Support\Facades\Route;',
+            "use Illuminate\Support\Facades\Route;\n" .
+            "use app\Http\Controllers\NewsController;",
+            base_path('routes/web.php')
+        );
 
         $this->addInFile(
-            "Route::get('news/', [NewsController::class, 'index'])->name('index');",
+            "Route::get('news', [NewsController::class, 'index'])->name('news.index');",
             base_path('routes/web.php')
         );
         $this->addInFile(
-            "Route::post('news/json', [NewsController::class, 'getIndexJsonPage'])->name('index.json.page');",
+            "Route::post('news/json', [NewsController::class, 'getIndexJsonPage'])->name('news.index.json.page');",
             base_path('routes/web.php')
         );
         $this->addInFile(
-            "Route::get('news/{slug}', [NewsController::class, 'show'])->name('show');",
+            "Route::get('news/{slug}', [NewsController::class, 'show'])->name('news.show');",
+            base_path('routes/web.php')
+        );
+
+        $this->replaceInFile('use Illuminate\Support\Facades\Route;',
+            "use Illuminate\Support\Facades\Route;\n" .
+            "use app\Http\Controllers\ContactsController;",
+            base_path('routes/web.php')
+        );
+
+        $this->addInFile(
+            "Route::get('contacts', [ContactsController::class, 'index'])->name('contacts.index');",
             base_path('routes/web.php')
         );
 
