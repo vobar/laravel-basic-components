@@ -19,7 +19,8 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'basic:install {stack : The development stack that should be installed (blade,vue)}';
+    protected $signature = 'basic:install {stack : The development stack that should be installed (blade,vue)}
+                            {--inertia : Indicate that the Vue Inertia stack should be installed (Deprecated)}';
 
     /**
      * The console command description.
@@ -251,7 +252,7 @@ class InstallCommand extends Command
      */
     protected function addInFile(string $string, string $path)
     {
-        file_put_contents($path, file_get_contents($path)."\n" . $string);
+        file_put_contents($path, file_get_contents($path) . "\n" . $string);
     }
 
     /**
