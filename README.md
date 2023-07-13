@@ -22,7 +22,7 @@ composer require vobar/laravel-basic-site
 
 ### HOW TO PUBLISH
 ```php
-php artisan vendor:publish --stack=[stack_name]
+php artisan vendor:publish [stack]
 ```
 #### available stacks:
 
