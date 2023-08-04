@@ -4,7 +4,7 @@
 
 > **Note**
 >
-> Mainly developed for laravel/breeze package
+> Mainly developed for laravel/breeze package for internal needs of our team and microservices/microsites development
 
 
 Components for fast creating sites.\
